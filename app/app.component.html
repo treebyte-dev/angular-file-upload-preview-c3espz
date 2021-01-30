@@ -1,0 +1,14 @@
+
+<h1> Choose file and see preview </h1>
+
+<img class="image-rounded" [src]="url" height="200"> <br/>
+<input type='file' (change)="onSelectFile($event)">
+
+<p> How to crop the uploaded image and auto resize it? </p>
+
+<canvas id="canvas"></canvas>
+<div style="display:none;">
+  <img id="source"
+       src="https://mdn.mozillademos.org/files/5397/rhino.jpg"
+       width="300" height="227">
+</div>
